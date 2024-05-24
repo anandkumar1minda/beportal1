@@ -20,7 +20,7 @@ public class ChReasonMasterObjOnReq {
 			 
 			 }
 			catch(Exception ex){
-				System.out.println("Error in funciton "+this.getClass().getName()+".MasterObjOnReq -> createObj "+ex.toString());
+				System.out.println("Erro in funciton "+this.getClass().getName()+".MasterObjOnReq -> createObj "+ex.toString());
 			}		  
 		  
 		  return master;		  
