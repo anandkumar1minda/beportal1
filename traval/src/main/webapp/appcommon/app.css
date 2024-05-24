@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+
+html,body,h1,h2,h3,h4,h5 {font-family: "Open+Sans", sans-serif}
+.applogout{
+	float:right;margin-right:20px;margin-top:10px;font-weight: bold; text-shadow: 2px 2px 4px #000000;
+}
+.commonLink{
+	text-decoration: none;
+}

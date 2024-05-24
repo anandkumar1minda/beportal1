@@ -1,0 +1,223 @@
+@charset "ISO-8859-1";
+/* Chrome, Safari, Edge, Opera */
+
+body {
+  font-family: Rubik, sans-serif;
+}
+
+.alink{ color:blue; text-decoration: none;}
+.alink:hover{color:red;text-decoration: underline;}
+.commonTextShadow{text-shadow: .2px .1px .05px #000; }
+.commonTextShadowWhite{text-shadow: .5px .5px .5px #fff;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0; } 
+input[type=number] { -moz-appearance: textfield; }
+
+.notification{font-weight: bold;font-size: 20px;padding: 10px;color:blue;}
+.smallfont{
+	font-size:11px; color:blue;
+}
+
+
+.width150px{width:150px;}
+.width100px{width:100px;}
+.maxChar{font-size:11px; color:blue;font-weight: bold;}
+input.appfields,select.appfields , input[type=checkbox].appfields {padding:3px;border-radius:5px;}
+
+sup{color:red;}
+.ecrnReq {
+  font-family: Rubik, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.ecrnReq td, .ecrnReq th { 
+  padding:3px;
+  width:25%;  
+}
+.ecrnReq th {border:1px solid white; background-color: #ddd; font-weight:normal;
+text-align: left;padding-left: 20px; text-shadow: .2px .1px .05px #000;
+background-image: radial-gradient(#fff, #eee);}
+
+.reportDiv{background: white;padding:10px;overflow-x: scroll;}
+.reportDiv table, .reportDiv th, .reportDiv td {
+	border: 1px solid #ddd;
+	border-collapse: collapse;	
+}
+.reportDiv th, .reportDiv td{ padding:3px 5px;}
+.reportDiv th{background-color:#009688;color:white;vertical-align:top;text-align: left;
+              font-weight:normal !important; text-shadow: .5px .5px .5px #fff;} /* #172D13;*/
+.reportDiv td{ vertical-align: top;text-shadow: .2px .1px .05px #000;font-weight: normal !important;}
+.reportDiv tr:nth-child(even){ background-color: #F7F7F7; }
+
+.questTable table, .questTable th, .questTable td{
+	border:none !important;
+	border-collapse: collapse;
+}
+.questTable tr:first-child , .questTable tr:nth-child(2){ background:white !important; color:black !important; }
+
+.feasibilityDiv { padding-bottom: 10px; }
+.feasibilityDiv table{ width:100%;}
+.feasibilityDiv table, .feasibilityDiv th, .feasibilityDiv td{ border: 1px solid #ccc; border-collapse: collapse; }
+.feasibilityDiv th, .feasibilityDiv td{ padding: 7px; text-align: left; }
+/*.feasibilityDiv tr:first-child , .feasibilityDiv tr:nth-child(2){ background:#009688; color:white; } */
+
+.feasibilityDiv th{background:#009688; color:#fff; font-weight:normal; text-shadow: .1px .1px .1px #fff;}
+.feasibilityDiv td{text-shadow: .2px .1px .05px #000;}
+.feasiDept div:first-child {display: inline-block; width:14%;vertical-align: top;text-align: left;}
+.feasiDept div:nth-child(2) {display: inline-block;width:83%;vertical-align: center;}
+
+.feasiDeptQuestColSpanTwo{padding:3px;}
+.feasiDeptQuestColSpanTwo div:first-child {display: inline-block;width:3%;vertical-align: top;text-align: left;}
+.feasiDeptQuestColSpanTwo div:nth-child(2){display: inline-block;width:95%;vertical-align: center;}
+
+.feasiDeptQuestColSpanOne{padding:3px;}
+.feasiDeptQuestColSpanOne div:first-child {display: inline-block;width:11%;vertical-align: top;text-align: left;}
+.feasiDeptQuestColSpanOne div:nth-child(2){display: inline-block;width:75%;vertical-align: center;}
+.feasiDeptQuestColSpanOne div:nth-child(3){display: inline-block;width:12%;vertical-align: top;}
+.cursorPointer{cursor: pointer;}
+.close:hover{color:red;}
+
+.checkboxcontainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  top: -10px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+}
+
+/* Hide the browser's default checkbox */
+.checkboxcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxcontainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxcontainer input:checked ~ .checkmark {
+  background-color: #fff  /*#2196F3; */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxcontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxcontainer .checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+     table.search-container {
+            border-collapse: collapse;
+            width: 100%;
+        }
+     table.search-container td {
+            padding: 8px;
+            text-align: left;
+            vertical-align: middle;
+        }
+      .rounded-input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            width: calc(100% - 75px);
+        }
+      .from-to-label {
+            border-radius: 5px 0 0 5px;
+            background-color: #f2f2f2;
+            padding: 5px;
+        }
+      .menu-select {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+  
+  .reportDiv {
+    max-height: 460px; /* Add a maximum height to make the table scrollable */
+    overflow-y: auto; /* Add vertical scrolling for the table */
+  }
+
+  #ecrnTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+ #ecrnTable th {
+    position: sticky;
+    top: -10px; /* Adjust the value to align the sticky header with the top of the table */
+    background-color:#009688;
+    z-index: 1; /* Adjust the z-index value to make the header appear above the content */
+}
+
+  #ecrnTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    word-break: break-word;
+    min-width: 50px;
+    max-width: 120px;
+  }
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color:  red;
+    padding: 10px;
+    z-index: 100;
+}
+.content-container {
+    margin-top: 40px;
+    }
+    .sticky-header-row {
+    position: sticky;
+    top: 0;
+    background-color: #009688;
+    padding: 10px;
+    z-index: 100;
+  }
+
+.w3-bar-item {
+    padding: 8px 16px; /* Adjust padding as needed */
+    font-size: 14px; /* Adjust font size as needed */
+  }
+
+

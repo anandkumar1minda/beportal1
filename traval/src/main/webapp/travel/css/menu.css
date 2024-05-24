@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+.mainMenuLinkDiv > a{
+	border-bottom: 1px solid #aaa !important;
+	padding:10px 12px !important;
+	text-shadow: .2px .1px .05px #aaa;	
+	font: normal 16px/25px "Sofia, sans-serif" !important;
+}
+.w3-blue{
+	text-shadow: .5px .5px .5px #fff;
+	font-weight: normal !important;
+}
