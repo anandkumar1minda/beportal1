@@ -6,7 +6,7 @@ public interface AppDbCommon {
 	// local site
 	public boolean isLocalHost = true;
 	public boolean isMailLocalHost = true;
-	public boolean isUAT = false;
+	public boolean isUAT = true;
 	
 	public String DB_HOST   = "localhost";
 	public String DB_PORT   = "3306";
